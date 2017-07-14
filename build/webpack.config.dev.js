@@ -4,7 +4,7 @@ var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require('extract-text-webpack-plugin'); // css单独打包
 var HtmlWebpackPlugin = require('html-webpack-plugin'); // 生成html
 
-var ROOT_PATH = path.resolve(__dirname); // 项目根路径
+var ROOT_PATH = path.resolve(__dirname, '../'); // 项目根路径
 var APP_PATH = path.resolve(ROOT_PATH, 'src'); // 项目的src目录路径
 var APP_FILE = path.resolve(APP_PATH, 'App'); // 项目的入口文件（即src/App.jsx）
 var BUILD_PATH = path.resolve(ROOT_PATH, '/antd/dist'); //规定打包好的文件存放到此目录下(开发模式中，我们一般配置为最终生成1个bundle.js)

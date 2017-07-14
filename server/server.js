@@ -1,6 +1,6 @@
 var webpack = require('webpack'); // 打包工具
 var WebpackDevServer = require('webpack-dev-server'); // 一个小型的Node.js Express服务器
-var config = require('./webpack.config.dev'); // 正常编译配置
+var config = require('../build/webpack.config.dev'); // 正常编译配置
 
 var opn = require('opn');
 

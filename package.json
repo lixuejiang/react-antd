@@ -4,10 +4,10 @@
   "description": "基于react + redux + immutable + less + ES6/7 + webpack + fetch + react-router + antd(1.x)实现的SPA后台管理系统模板",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "hot": "node server_hot.js",
-    "dist": "yarn run dll && cross-env NODE_ENV=production webpack --display-error-details --config webpack.config.dist.js --progress --colors -p",
-    "dll": "webpack --config webpack.dll.config.js --progress --colors -p"
+    "dev": "node ./server/server.js",
+    "hot": "node ./server/server_hot.js",
+    "dist": "yarn run dll && cross-env NODE_ENV=production webpack --display-error-details --config ./build/webpack.config.dist.js --progress --colors -p",
+    "dll": "webpack --config ./build/webpack.dll.config.js --progress --colors -p"
   },
   "repository": {
     "type": "git",
