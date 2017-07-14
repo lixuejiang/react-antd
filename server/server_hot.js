@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var express = require('express');
 var opn = require('opn');
-var config = require('./webpack.config.hot');
+var config = require('../build/webpack.config.hot');
 var proxyMiddleware = require('http-proxy-middleware');
 
 var app = express();

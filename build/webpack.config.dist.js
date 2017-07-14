@@ -9,7 +9,7 @@ var HappyPack = require('happypack');
 var happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length});
 var bundleConfig = require("./antd/dist/bundle-config.json");
 
-var ROOT_PATH = path.resolve(__dirname); // 项目根路径
+var ROOT_PATH = path.resolve(__dirname, '../'); // 项目根路径
 var APP_PATH = path.resolve(ROOT_PATH, 'src'); // 项目src目录
 var APP_FILE = path.resolve(APP_PATH, 'app'); // 项目的入口文件（即src/app.jsx）
 var BUILD_PATH = path.resolve(ROOT_PATH, 'antd/dist'); // 发布文件所存放的目录
